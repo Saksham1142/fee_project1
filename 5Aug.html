@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link rel="stylesheet" href="5Aug.css">
+    <style>
+  .secret {
+    display: none;}
+
+    .Box1 ,.Box2{
+        display: block;
+        width: 100px;
+        height: 50px;
+  }
+.sidebar{
+    position: sticky;
+    height: 0;
+
+}
+.tooltip-container {
+      display: inline-block; /* behaves like inline but allows width/height */
+      position: relative;
+      width: 100px;
+      height: 30px;
+      background-color: lightgray;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+    }
+
+    .tooltip {
+      visibility: hidden;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 4px;
+      padding: 5px;
+      position: absolute;
+      bottom: 100%; /* position above the container */
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip-container:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+
+}
+</style>
+</head>
+<body>
+    <ul style="list-style: none; padding: 0;">
+  <li style="display: inline; margin-right: 15px;">Home</li>
+  <li style="display: inline; margin-right: 15px;">About</li>
+  <li style="display: inline;">Contact</li>
+</ul>
+   
+
+<p>This is visible</p>
+<p class="secret">You shouldn't see me</p>
+
+
+
+
+<span class="Box1">Box1</span>
+<span class="Box2">Box2</span>
+
+
+<div class="sidebar">I'm sticky</div>
+<div class="content">Scroll to test... </div>
+
+ <span class="tooltip-container">
+    Hover me
+    <span class="tooltip">Tooltip Text</span>
+  </span>
+</body>
+</html>

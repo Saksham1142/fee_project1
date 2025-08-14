@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #dff0d8;
+        }
+
+
+
+        .login-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h2>Student Marks</h2>
+
+    <table>
+        <tr>
+            <th rowspan="2">Student Name</th>
+            <th colspan="3">Marks</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <td>Saksham</td>
+            <td>85</td>
+            <td>90</td>
+            <td>78</td>
+        </tr>
+        <tr>
+            <td>Shivansh</td>
+            <td>92</td>
+            <td>88</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td>Yuvraj</td>
+            <td>75</td>
+            <td>80</td>
+            <td>69</td>
+        </tr>
+        <tr>
+            <td>Karman</td>
+            <td>89</td>
+            <td>94</td>
+            <td>88</td>
+        </tr>
+    </table>
+
+
+
+
+
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

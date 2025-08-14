@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJ Travels</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWIarc1HbAtSV_a2cjDBkBbIqZmthZ2LdkFg&s.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #2980b9;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #2980b9;
+            margin: 10px 0;
+            padding-left: 10px;
+            color: #555;
+        }
+        form label, form input, form select {
+            display: block;
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        /* New enhanced styles */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 15px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form select {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        form input[type="text"]:focus,
+        form input[type="email"]:focus,
+        form select:focus {
+            border-color: #2980b9;
+            outline: none;
+        }
+        form input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        form button {
+            margin-top: 15px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #1c5980;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            table, video {
+                width: 100%;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>SJ Travels</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+    <p>
+         Join me on my adventures around the world as I explore breathtaking landscapes, vibrant cultures, and hidden gems. From misty mountains to sunny coastlines, this blog is your passport to stories, tips, and travel inspiration. Pack your bags—let’s wander together!
+    </p>
+     <h2>Top 3 Travel Destinations</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Country</th>
+            <th>Best Time to Visit</th>
+            <th>Language</th>
+        </tr>
+        <tr>
+        
+            <td>Paris</td>
+            <td>Anytime</td>
+            <td>French</td>
+        </tr>
+        <tr>
+
+            <td>Bali</td>
+            <td>Summers</td>
+            <td>Indonesian</td>
+        </tr>
+        <tr>
+    
+            <td>Pakistan</td>
+            <td>Never</td>
+            <td>Urdu</td>
+        </tr>
+    </table>
+<section>
+    <h2>Quotes</h2>
+    <!-- <blockquote> used for long quotes -->
+     <blockquote>
+    "The world is a book, and those who do not travel read only one page."
+    <br>— Saint Augustine
+</blockquote>
+<!-- <q> used for short inline quotes -->
+<p>As they say, <q>Travel is the only thing you buy that makes you richer.</q></p>
+</section>
+<section>
+    <h2>Trip videos🎥</h2>
+     <video width="600" controls>
+        <source src="video.mp4" type="video/mp4">
+        </video>
+
+    <h3>Background Music🌍</h3>
+    <audio autoplay loop muted>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+</section>
+<section>
+    <h2>Plan Your Trip ✈️</h2>
+     <form action="submit-form.html" method="post"></form>
+
+     <label for="fullname:" >Full Name</label>  
+     <input type="text" id="fullname" name="fullname" required><br>
+     <label for="destination">Destination Interest</label>
+     <select id="destination" name="destination" required>
+  <option value="paris">Paris</option>
+  <option value="bali">Bali</option>
+  <option value="kyoto">Kyoto</option>
+  </select><br>
+  <label for="tot">Type of traveller</label>
+  <input type="checkbox" id="tot" name="tot" required><br>
+  <label for="email">Email ID</label>
+  <input type="email" id="email" name="email" required><br>
+  <button type="submit">Submit</button>
+
+  <section>
+    <footer>
+        <p> &copy; 2025 SJ WanderWithMe Travel Blog. All rights reserved.</p>
+    </footer>
+  </section>
+    
+</section>
+    </div>
+    </body>
+</html>
