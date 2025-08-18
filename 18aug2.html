@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If-Else Ladder Examples</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+
+  <h2>JavaScript If-Else Ladder Examples</h2>
+
+  <!-- 1. Grading System -->
+  <h3>1. Grading System</h3>
+  <input type="number" id="marks" placeholder="Enter marks">
+  <button onclick="checkGrade()">Check Grade</button>
+  <p id="result1"></p>
+
+  <!-- 2. Positive / Negative / Zero -->
+  <h3>2. Positive, Negative or Zero</h3>
+  <input type="number" id="num" placeholder="Enter number">
+  <button onclick="checkNumber()">Check</button>
+  <p id="result2"></p>
+
+  <!-- 3. Age Category -->
+  <h3>3. Age Category</h3>
+  <input type="number" id="age" placeholder="Enter age">
+  <button onclick="checkAge()">Check</button>
+  <p id="result3"></p>
+
+  <!-- 4. Small / Medium / Large -->
+  <h3>4. Small, Medium or Large</h3>
+  <input type="number" id="sizeNum" placeholder="Enter number">
+  <button onclick="checkSize()">Check</button>
+  <p id="result4"></p>
+
+  <!-- 5. Month Season -->
+  <h3>5. Season by Month (1-12)</h3>
+  <input type="number" id="month" placeholder="Enter month (1-12)">
+  <button onclick="checkSeason()">Check</button>
+  <p id="result5"></p>
+
+  <!-- 6. Exam Score -->
+  <h3>6. Exam Score</h3>
+  <input type="number" id="score" placeholder="Enter score">
+  <button onclick="checkScore()">Check</button>
+  <p id="result6"></p>
+
+  <!-- 7. Greeting by Time -->
+  <h3>7. Greeting by Time</h3>
+  <input type="number" id="time" placeholder="Enter time (0-23)">
+  <button onclick="checkGreeting()">Check</button>
+  <p id="result7"></p>
+
+
+  <script>
+    // 1. Grading System
+    function checkGrade() {
+      let marks = document.getElementById("marks").value;
+      let result = "";
+      if (marks >= 90) {
+        result = "Grade: A";
+      } else if (marks >= 75) {
+        result = "Grade: B";
+      } else if (marks >= 50) {
+        result = "Grade: C";
+      } else {
+        result = "Fail";
+      }
+      document.getElementById("result1").innerText = result;
+    }
+
+    // 2. Positive / Negative / Zero
+    function checkNumber() {
+      let num = document.getElementById("num").value;
+      let result = "";
+      if (num > 0) {
+        result = "Positive";
+      } else if (num < 0) {
+        result = "Negative";
+      } else {
+        result = "Zero";
+      }
+      document.getElementById("result2").innerText = result;
+    }
+
+    // 3. Age Category
+    function checkAge() {
+      let age = document.getElementById("age").value;
+      let result = "";
+      if (age < 13) {
+        result = "Child";
+      } else if (age < 20) {
+        result = "Teenager";
+      } else {
+        result = "Adult";
+      }
+      document.getElementById("result3").innerText = result;
+    }
+
+    // 4. Small / Medium / Large
+    function checkSize() {
+      let number = document.getElementById("sizeNum").value;
+      let result = "";
+      if (number < 10) {
+        result = "Small";
+      } else if (number <= 50) {
+        result = "Medium";
+      } else {
+        result = "Large";
+      }
+      document.getElementById("result4").innerText = result;
+    }
+
+    // 5. Season by Month
+    function checkSeason() {
+      let month = document.getElementById("month").value;
+      let result = "";
+      if (month == 12 || month == 1 || month == 2) {
+        result = "Winter";
+      } else if (month >= 3 && month <= 6) {
+        result = "Summer";
+      } else if (month >= 7 && month <= 11) {
+        result = "Rainy";
+      } else {
+        result = "Invalid Month";
+      }
+      document.getElementById("result5").innerText = result;
+    }
+
+    // 6. Exam Score
+    function checkScore() {
+      let score = document.getElementById("score").value;
+      let result = "";
+      if (score >= 90) {
+        result = "Excellent";
+      } else if (score >= 70) {
+        result = "Good";
+      } else if (score >= 50) {
+        result = "Average";
+      } else {
+        result = "Poor";
+      }
+      document.getElementById("result6").innerText = result;
+    }
+
+    // 7. Greeting by Time
+    function checkGreeting() {
+      let time = document.getElementById("time").value;
+      let result = "";
+      if (time < 12) {
+        result = "Good Morning";
+      } else if (time < 18) {
+        result = "Good Afternoon";
+      } else {
+        result = "Good Evening";
+      }
+      document.getElementById("result7").innerText = result;
+    }
+  </script>
+</body>
+</html>
