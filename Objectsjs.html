@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Catalog</title>
+</head>
+<body>
+  <h2>Product Catalog</h2>
+  <p id="output"></p>
+
+  <script>
+    
+//     let product = {
+//       id: 101,
+//       name: "Wireless Mouse",
+//       price: 799,
+//       inStock: true
+//     };
+
+// console.log("Name:", product.name);
+// console.log("Price:", product.price);
+    
+//     product.price = 749;
+//     product.discount = 10;
+//     delete product.inStock;
+
+    
+   
+
+
+
+// let user={
+//     name: "Saksham jain",
+//     email: "saksham@gmail.com",
+//     isverified: "true",
+//     preferences:{
+//         theme:"dark",
+//         language:"en-US",
+//     }
+// };
+// console.log("Theme:", user.preferences.theme);
+
+// // Step 3: Change language to "hi-IN"
+// user.preferences.language = "hi-IN";
+
+// // Step 4: Add new preference: notifications: true
+// user.preferences.notifications = true;
+
+// console.log("Updated Preferences:", user.preferences);
+
+
+
+
+
+let bankAccount = {
+  owner: "Saksham Jain",
+  balance: 1000,  
+
+  // Deposit method
+  deposit: function(amount) {
+    this.balance += amount;
+    return this.balance;
+  },
+
+  // Withdraw method
+  withdraw: function(amount) {
+    if (amount > this.balance) {
+      return "Insufficient funds";
+    }
+    this.balance -= amount;
+    return this.balance;
+  }
+};
+
+// ---- Test ----
+console.log("After deposit(500):", bankAccount.deposit(500));   // 1500
+console.log("After withdraw(300):", bankAccount.withdraw(300)); // 1200
+console.log("After withdraw(5000):", bankAccount.withdraw(5000)); // "Insufficient funds"
+
+</script>
+</body>
+</html>
+
+
